@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    {% if 'about' %}
+        {{ 'about' }} - {{ block.super }} 
+    {% else %}
+        {{ block.super }}
+    {% endif %}
+{% endblock title %}
+
+{% block content %}
+<p class="text-green-900 text-7xl dark:text-white text-center" > Sorry morad there is no suprise</p>
+
+{% endblock content %}
